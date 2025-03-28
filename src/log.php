@@ -16,6 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<div class='alert alert-danger'>NIE no encontrado, por favor intente nuevamente.</div>";
     }
-    mysqli_close($mysqli); // Cerramos la conexión
+    mysqli_close($mysqli);
 }
 ?>

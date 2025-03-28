@@ -24,32 +24,32 @@
                     <option value="M">Mujer</option>
                 </select>
             </div>
-            <div class="form-group mb-3">
-                <input type="email" class="form-control" name="email" placeholder="Correo" required autocomplete="off">
+            <div class="form-group mb-3 col-xl-7 col-lg-6 col-md-8 col-sm-10 g-3">
+                <input type="email" class="form-control col-xl-7 col-lg-6 col-md-8 col-sm-12 g-3" name="email" placeholder="Correo" required autocomplete="off">
             </div>
             <div class="form-group mb-3">
-                <input type="text" class="form-control" name="telefono" placeholder="Teléfono" required autocomplete="off">
+                <input type="text" class="form-control col-xl-7 col-lg-9 col-md-8 col-sm-12 g-3" name="telefono" placeholder="Teléfono" required autocomplete="off">
             </div>
             <div class="form-group mb-3">
-                <input type="number" class="form-control" name="P1" placeholder="P1" required autocomplete="off">
+                <input type="number" class="form-control col-xl-10 col-lg-9 col-md-8 col-sm-12 g-3" name="P1" placeholder="P1" required autocomplete="off">
             </div>
             <div class="form-group mb-3">
-                <input type="number" class="form-control" name="P2" placeholder="P2" required autocomplete="off">
+                <input type="number" class="form-control col-xl-12 col-lg-6 col-md-12 col-sm-12 g-3" name="P2" placeholder="P2" required autocomplete="off">
             </div>
             <div class="form-group mb-3">
-                <input type="number" class="form-control" name="P3" placeholder="P3" required autocomplete="off">
+                <input type="number" class="form-control col-xl-7 col-lg-6 col-md-8 col-sm-12 g-3" name="P3" placeholder="P3" required autocomplete="off">
             </div>
             <div class="form-group mb-3">
-                <input type="number" class="form-control" name="P4" placeholder="P4" required autocomplete="off">
+                <input type="number" class="form-control col-xl-7 col-lg-6 col-md-8 col-sm-12 g-3" name="P4" placeholder="P4" required autocomplete="off">
             </div>
 
             <button type="submit" class="btn btn-primary w-100">Agregar Alumno</button>
         </form>
 
 
-    <div class="col-8">
+    <div class="container-fluid col-xl-7 col-lg-12 col-md-12 col-sm-12 g-3">
         <h2>Lista de Alumnos</h2>
-        <table class="table">
+        <table class="table ">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
@@ -99,4 +99,16 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    document.oncontextmenu = function() {return false;}
+    
+    document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123 || event.keyCode == 18)
+        {
+        return false;
+      }
+    } 
+    
+    </script>
 </html>
